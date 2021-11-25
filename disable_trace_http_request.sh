@@ -5,7 +5,7 @@ read filename
 
 if [[ -f $filename ]]
     then
-        if grep -q "ServerTokens Prod" $filename && grep -q "ServerSignature Off" $filename
+        if grep -q "TraceEnable off" $filename
             then
                 echo "Tracing http request already disabled..."
         else

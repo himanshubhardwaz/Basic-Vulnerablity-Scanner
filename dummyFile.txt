@@ -5,3 +5,4 @@ ServerSignature Off
 <Directory /opt/apache/htdocs>
 Options -Indexes
 </Directory>
+Header edit Set-Cookie ^(.*)$ ;HttpOnly;Secure
