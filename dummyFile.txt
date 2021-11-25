@@ -1,2 +1,7 @@
 ServerTokens Prod
 ServerSignature Off
+
+
+<Directory /opt/apache/htdocs>
+Options -Indexes
+</Directory>
