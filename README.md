@@ -2,6 +2,8 @@
 Every time we set up a server there are a couple of basic vulnerabilities which we need to take care of by adding some configurations on the server. 
 Here I automate the below configs so that setting up a server becomes (almost) as simple as counting 1,2,3!
 
+As of now my scripts only supports Apache servers, I will be ading nginx support very soon 🙂.
+
 1. Git source code exposure
 2. Removing server version banner
 3. Disable directory browser listing
