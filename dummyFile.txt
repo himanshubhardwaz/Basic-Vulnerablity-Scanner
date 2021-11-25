@@ -6,3 +6,4 @@ ServerSignature Off
 Options -Indexes
 </Directory>
 Header edit Set-Cookie ^(.*)$ ;HttpOnly;Secure
+Header set X-XSS-Protection "1; mode=block"
