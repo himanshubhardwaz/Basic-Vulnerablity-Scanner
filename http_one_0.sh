@@ -1,7 +1,7 @@
 #! /bin/bash
 
-echo "Enter file name:"
-read filename
+#echo "Enter file name:"
+#read filename
 
 declare http_checks=('RewriteEngine On' 'RewriteCond %{THE_REQUEST} !HTTP/1.1$' 'RewriteRule .* - [F]')
 

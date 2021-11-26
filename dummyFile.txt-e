@@ -1,0 +1,6 @@
+<DirectoryMatch “^/.*/\.git/”>
+Order deny,allow
+Deny from all
+</DirectoryMatch>
+ServerTokens Prod
+ServerSignature Off

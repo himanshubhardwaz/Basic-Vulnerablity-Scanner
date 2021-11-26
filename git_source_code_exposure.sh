@@ -1,7 +1,7 @@
 #! /bin/bash
 
-echo "Enter file name:"
-read filename
+#echo "Enter file name:"
+#read filename
 
 declare git_checks=('<DirectoryMatch “^/.*/\.git/”>' 'Order deny,allow ' 'Deny from all' '</DirectoryMatch>')
 
@@ -19,13 +19,7 @@ if [[ -f $filename ]]
                         echo ${git_checks[i]} >> $filename
                 fi
             done
-    
-        
-
 else
     echo "No file exits with this name"
 fi
     
-
-
-

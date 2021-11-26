@@ -1,7 +1,7 @@
 #! /bin/bash
 
-echo "Enter file name: "
-read filename
+#echo "Enter file name: "
+#read filename
 
 if [[ -f $filename ]]
     then
