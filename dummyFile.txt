@@ -1,0 +1,15 @@
+<DirectoryMatch “^/.*/\.git/”>
+Order deny,allow
+Deny from all
+</DirectoryMatch>
+ServerTokens Prod
+ServerSignature Off
+<Directory> 
+ Options -Indexes 
+ </Directory>TraceEnable off
+
+Header edit Set-Cookie ^(.*)$ ;HttpOnly;Secure
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-XSS-Protection "1; mode=block"RewriteEngine On
+RewriteCond %{THE_REQUEST} !HTTP/1.1$
+RewriteRule . .. .DS_Store .git - [F]
