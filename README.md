@@ -1,4 +1,4 @@
-# Basic-Vulnerablity-Scanner
+# Basic Vulnerablity Scanner
 Every time we set up a server there are a couple of basic vulnerabilities which we need to take care of by adding some configurations on the server. 
 Here I automate the below configs so that setting up a server becomes (almost) as simple as counting 1,2,3!
 
